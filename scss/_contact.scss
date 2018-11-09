@@ -1,0 +1,78 @@
+// Styling for the contact section
+section#contact {
+  background-color: $gray-900;
+  background-image: url('../img/map-image21.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  .section-heading,
+  .section-subheading,
+  .adress {
+    color: $white;
+  }
+
+  .subheading-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      margin-bottom: 25px;
+    }
+  }
+
+  .send-message {
+    margin-top: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+    input,
+    textarea {
+      padding: 14px;
+    }
+    input.form-control {
+      height: auto;
+    }
+    textarea.form-control {
+      height: 214px;
+    }
+  }
+  .form-control:focus {
+    border-color: $primary;
+    box-shadow: none;
+  }
+  ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  ::-moz-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+  :-ms-input-placeholder {
+    font-weight: 700;
+    color: $gray-400;
+    @include heading-font;
+  }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+  iframe {
+    width: 350px !important;
+  }
+}
+
+@media screen and (max-device-width: 400px) {
+  iframe {
+    width: 325px !important;
+  }
+}
+

@@ -1,0 +1,12 @@
+// Styling for the timeline section
+#despre-noi {
+  .row-2 {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-device-width: 400px) {
+    img {
+      width: 325px !important;
+    }
+  }
+}
