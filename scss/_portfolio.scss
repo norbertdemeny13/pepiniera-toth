@@ -1,5 +1,31 @@
 // Styling for the portfolio section
-#portfolio {
+#produse {
+  .header-produse {
+    background-color: #212529;
+    margin: 12px 0;
+
+    .rose-logo-container {
+      background-color: $primary;
+      margin-right: 10px;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        padding: 2px;
+      }
+    }
+
+    p {
+      color: $primary;
+      @include script-font;
+      font-size: 1.45em;
+      margin: 0;
+      padding: 6px 0;
+    }
+  }
+
   .portfolio-item {
     right: 0;
     margin: 0 0 15px;
